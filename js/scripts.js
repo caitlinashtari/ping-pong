@@ -1,18 +1,27 @@
 /* Back-end ----------------*/
 var numberArray = [];
+var newArray = [];
+
+function countDown (numberInput) {
+  for (i = 1; i <= numberInput; i += 1){
+  numberArray.push(i);
+}
+}
 
 
-var number = function (numberInput){
-  if (numberInput % 3 === 0 && numberInput % 15 != 0){
-    return "ping";
-  } else if (numberInput % 5 === 0 && numberInput % 15 != 0){
-    return "pong";
-  } else if (numberInput % 15 === 0){
-    return "pingpong";
+var pingPong = function() {
+  numberArray.map(function(numberArrays){
+  if (numberArrays % 3 === 0 && numberArrays % 15 != 0){
+    newArray.push("ping");
+  } else if (numberArrays % 5 === 0 && numberArrays % 15 != 0){
+    newArray.push("pong");
+  } else if (numberArrays % 15 === 0){
+    newArray.push("pingpong");
   } else {
-    return numberInput;
+    newArray.push(numberArrays);
   }
-};
+});
+}
 
 
 
@@ -21,11 +30,15 @@ $(document).ready(function(){
   $(".formDiv form").submit(function(event) {
     event.preventDefault();
     var numberInput = parseInt($("input#numberInput").val());
-    numberArray.push(numberInput);
-    var result = number(numberInput);
+    var array1Input = countDown(numberInput);
+    pingPong();
 
 
-    $(".output").text(result);
+
+
+
+
+    $(".output").text(newArray);
 
   });
 
