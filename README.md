@@ -11,8 +11,11 @@ _This web application takes user input and returens a range of numbers from 1 to
 ## Setup/Installation Requirements
 
 * _Clone github repository_
-* _Open in browser_
+* _Open link in browser_
 * _Enjoy_
+
+## GH-pages link
+_https://caitlinashtari.github.io/ping-pong/_
 
 ## Specifications
 _The program will identify non-number entries and ignore them.
