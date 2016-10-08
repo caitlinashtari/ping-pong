@@ -8,7 +8,6 @@ function countDown (numberInput) {
 }
 }
 
-
 var pingPong = function() {
   numberArray.map(function(numberArrays){
   if (numberArrays % 3 === 0 && numberArrays % 15 != 0){
@@ -34,11 +33,10 @@ $(document).ready(function(){
     pingPong();
 
 
-
-
-
-
-    $(".output").text(newArray);
+    $(".output").append(newArray);
+    $(".formDiv form").each (function() {
+      this.reset();
+    });
 
   });
 
