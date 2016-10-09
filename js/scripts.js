@@ -10,16 +10,16 @@ function countDown (numberInput) {
 }
 
 var pingPong = function() {
-  numberArray.map(function(numberArrays){
-  if (numberArrays % 3 === 0 && numberArrays % 15 != 0){
-    newArray.push("<li>ping</li>");
-  } else if (numberArrays % 5 === 0 && numberArrays % 15 != 0){
-    newArray.push("<li>pong</li>");
-  } else if (numberArrays % 15 === 0){
-    newArray.push("<li>pingpong</li>");
-  } else {
-    newArray.push("<li>" + numberArrays + "</li");
-  }
+    numberArray.map(function(numberArrays){
+    if (numberArrays % 15 === 0){
+      newArray.push("<li>pingpong</li>");
+    } else if (numberArrays % 5 === 0){
+     newArray.push("<li>pong</li>");
+    } else if (numberArrays % 3 === 0){
+     newArray.push("<li>ping</li>");
+    } else {
+      newArray.push("<li>" + numberArrays + "</li");
+    }
 });
 }
 
