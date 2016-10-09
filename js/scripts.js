@@ -35,12 +35,3 @@ $(document).ready(function(){
 
   });
 });
-
-
-
-    // function
-    //   var numberInput2 = parseInt($("input#numberInput").val());
-    //   var array1Input2 = newInput(numberInput2);
-    //   var newArrayInput2 = pingPong();
-    //   $(".output").html(newInputArray);
-    // });
