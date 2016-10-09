@@ -27,6 +27,8 @@ var pingPong = function() {
 $(document).ready(function(){
   $(".formDiv form").submit(function(event) {
     event.preventDefault();
+    numberArray = [];
+    newArray = [];
     var numberInput = parseInt($("input#numberInput").val());
     var array1Input = countDown(numberInput);
     var newArrayInput = pingPong();
