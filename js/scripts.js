@@ -1,3 +1,4 @@
+
 /* Back-end ----------------*/
 var numberArray = [];
 var newArray = [];
@@ -27,20 +28,15 @@ var pingPong = function() {
 $(document).ready(function(){
   $(".formDiv form").submit(function(event) {
     event.preventDefault();
+    numberArray = [];
+    newArray = [];
     var numberInput = parseInt($("input#numberInput").val());
     var array1Input = countDown(numberInput);
     var newArrayInput = pingPong();
     $(".output").html(newArray);
     this.reset();
 
+
   });
+
 });
-
-
-
-    // function
-    //   var numberInput2 = parseInt($("input#numberInput").val());
-    //   var array1Input2 = newInput(numberInput2);
-    //   var newArrayInput2 = pingPong();
-    //   $(".output").html(newInputArray);
-    // });
