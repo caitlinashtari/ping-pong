@@ -14,6 +14,9 @@ _This web application takes user input and returns a range of numbers from 1 to 
 * _Open in browser_
 * _Enjoy_
 
+## GH-Pages Link
+_https://caitlinashtari.github.io/ping-pong/_
+
 ## Specifications
 _The program will identify non-number entries and ignore them.
 	•	Input: “a”
