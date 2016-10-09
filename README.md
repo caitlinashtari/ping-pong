@@ -6,7 +6,7 @@
 
 ## Description
 
-_This web application takes user input and returens a range of numbers from 1 to chosen number. Numbers divisible by 3 are replaced with the word "ping". Numbers divisible by 5 are replaced with the word "pong". Numbers divisible by 15 are replaced with the word "pingpong". _
+_This web application takes user input and returns a range of numbers from 1 to chosen number. Numbers divisible by 3 are replaced with the word "ping". Numbers divisible by 5 are replaced with the word "pong". Numbers divisible by 15 are replaced with the word "pingpong". _
 
 ## Setup/Installation Requirements
 
